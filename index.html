@@ -79,7 +79,7 @@
   .facts-list dt{font-weight:600;color:var(--navy)}
   .case-head h2{font-size:clamp(40px,5.4vw,72px);font-weight:800;letter-spacing:-.035em;line-height:.98;margin-bottom:28px}
   .case-head .summary{font-size:20px;max-width:34em;color:var(--slate)}
-  .numbers{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--navy);border-bottom:2px solid var(--navy);margin-bottom:24px}
+  .numbers{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));border-top:2px solid var(--navy);border-bottom:2px solid var(--navy);margin-bottom:24px}
   .numbers div{padding:28px 28px 28px 0}
   .numbers div+div{padding-left:28px;border-left:1px solid var(--rule)}
   .numbers b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(44px,5vw,68px);line-height:1;letter-spacing:-.04em;color:var(--cobalt);margin-bottom:12px}
@@ -102,6 +102,7 @@
   .pain li{padding-left:20px;border-left:3px solid var(--coral)}
   .pain strong{display:block;font-weight:700;margin-bottom:2px}
   .pain span{color:var(--slate);font-size:16px}
+  .pain.wins li{border-left-color:var(--cobalt)}
   .sources{margin-top:24px;font-size:15px;color:var(--slate)}
   .sources strong{color:var(--navy)}
 
@@ -233,7 +234,12 @@
     <a class="row" href="#crm-b2b">
       <span class="where">Grupo ZAP e OLX<br>2020 a 2021</span>
       <h3>Três fases, uma base de clientes</h3>
-      <span class="num">20 dias<small>de implantação B2B, antes mais de 2 meses</small></span>
+      <span class="num">~30<small>incorporadoras migradas</small></span>
+    </a>
+    <a class="row" href="#papo-recorrente">
+      <span class="where">Grupo ZAP e OLX<br>2020 a 2021</span>
+      <h3>Papo Recorrente: o time que vende passa a conhecer o produto</h3>
+      <span class="num">-67%<small>no tempo de implantação</small></span>
     </a>
     <a class="row" href="#operacao">
       <span class="where">Remessa Online<br>2021 a 2023</span>
@@ -357,7 +363,7 @@
     </div>
 
     <div class="numbers">
-      <div><b>-67%</b><span>no tempo de implantação de uma nova incorporadora, de mais de 2 meses para 20 dias</span></div>
+      <div><b>20 mil+</b><span>usuários ativos por dia nas duas plataformas, num produto sem novas vendas</span></div>
       <div><b>~30</b><span>incorporadoras migradas para a nova plataforma em 6 meses</span></div>
       <div><b>~60</b><span>de NPS, mesmo com as novas vendas suspensas</span></div>
     </div>
@@ -374,31 +380,11 @@
       <h3>Linha do tempo</h3>
       <div class="body">
         <ol class="timeline">
-          <li class="on"><div class="phase">Fase 0</div><h4>Implantação travada</h4><p>Colocar uma incorporadora no ar levava mais de 2 meses e dependia de scripts do time de tecnologia.</p><p class="mine">Redesenhei a implantação e criei um back-office interno.</p></li>
+          <li class="on"><div class="phase">Fase 0</div><h4>Implantação travada</h4><p>Colocar uma incorporadora no ar levava mais de 2 meses e dependia de scripts do time de tecnologia.</p><p class="mine">Redesenhei a implantação. Essa história está no case <a href="#papo-recorrente">Papo Recorrente</a>.</p></li>
           <li><div class="phase">Fase 1</div><h4>Vendas suspensas</h4><p>Uma disputa judicial movida por um concorrente suspendeu temporariamente as novas vendas.</p><p class="mine">Retive a base com produto e relacionamento.</p></li>
           <li><div class="phase">Fase 2</div><h4>Nova marca, nova versão</h4><p>Começa o IncPro, uma versão 2.0 feita do zero, e a marca muda para recuperar reputação.</p><p class="mine">Mantive o produto atual estável.</p></li>
           <li><div class="phase">Fase 3</div><h4>Migração para o Anapro</h4><p>Com o Anapro no grupo, o IncPro é descontinuado e a base passa a migrar.</p><p class="mine">Conduzi a primeira onda e a transição do time.</p></li>
         </ol>
-      </div>
-    </div>
-
-    <div class="part">
-      <h3>Implantação de 2 meses para 20 dias</h3>
-      <div class="body">
-        <p>A implantação dependia de duas coisas lentas: o cliente liberar as próprias bases de leads, corretores e imóveis, e o time de tecnologia rodar scripts direto no banco para configurar cada instância.</p>
-        <div class="split">
-          <div class="before"><h4>Antes</h4><ul>
-            <li>Toda configuração passava pela tecnologia, via scripts no banco</li>
-            <li>Responsabilidades misturadas entre empresa e cliente, sem prazo claro</li>
-            <li>O cliente só começava a usar quando tudo estava cadastrado</li>
-          </ul></div>
-          <div><h4>Depois</h4><ul>
-            <li>Um back-office interno em que o time de implantação configurava tudo, inclusive durante as visitas, sem depender de alguém técnico</li>
-            <li>O que era interno ficou com a empresa, e o envio das bases ficou claramente com a incorporadora</li>
-            <li>O analista cadastrava ao menos um empreendimento em lançamento para o cliente já começar a operar</li>
-            <li>Cobrança a partir do segundo mês, para criar urgência do lado do cliente</li>
-          </ul></div>
-        </div>
       </div>
     </div>
 
@@ -452,6 +438,76 @@
     </div>
   </div>
   <div class="lesson"><div class="wrap"><h3>O que aprendi</h3><p>Em B2B, retenção é confiança. Mas migrar exige mais: se a nova plataforma não resolve a mesma dor, nenhum relacionamento segura o cliente.</p></div></div>
+</article>
+
+<!-- CASE PAPO -->
+<article class="case" id="papo-recorrente">
+  <div class="wrap">
+    <div class="case-head">
+      <dl class="facts-list">
+        <div><dt>Empresa</dt><dd>Grupo ZAP e OLX Brasil</dd></div>
+        <div><dt>Período</dt><dd>2020 a 2021</dd></div>
+        <div><dt>Papel</dt><dd>Product Manager do HouseCRM</dd></div>
+      </dl>
+      <div>
+        <h2>Papo Recorrente: o time que vende passa a conhecer o produto</h2>
+        <p class="summary">Num almoço com o time de vendas, percebi que eles não conheciam em detalhe o produto que vendiam. Um treinamento oferecido a quem tivesse interesse virou uma cerimônia que reuniu cinco times e mexeu em aquisição, implantação e suporte.</p>
+      </div>
+    </div>
+
+    <div class="numbers">
+      <div><b>-67%</b><span>no tempo de implantação de uma nova incorporadora, de mais de 2 meses para 20 dias</span></div>
+      <div><b>5 times</b><span>participando por vontade própria: vendas de HouseCRM, HouseVendas e Parcerias, Implantação e CX</span></div>
+    </div>
+
+    <div class="part">
+      <h3>Um almoço revelou o problema</h3>
+      <div class="body">
+        <p>Conversando com pessoas do time de vendas, percebi que elas não sabiam em detalhe quais funcionalidades o HouseCRM tinha nem como algumas delas se comportavam. Tínhamos um time vendendo um produto que não conhecia por inteiro.</p>
+        <p>Isso afetava três momentos da vida do cliente: a venda, a implantação e o suporte, onde chamados de "bug" muitas vezes eram o produto funcionando como deveria.</p>
+      </div>
+    </div>
+
+    <div class="part">
+      <h3>De um convite a uma cerimônia</h3>
+      <div class="body">
+        <p>Me ofereci para explicar o produto e treinar quem se interessasse. Não houve convocação nem obrigação. Quem participava começou a chamar colegas, e o encontro, batizado de Papo Recorrente, foi crescendo até reunir todo o time de vendas do HouseCRM, do HouseVendas e da Plataforma de Parcerias, além dos times de Implantação e de CX.</p>
+        <p class="pull">O crescimento veio do boca a boca, não de uma ordem da liderança.</p>
+      </div>
+    </div>
+
+    <div class="part">
+      <h3>Implantação de 2 meses para 20 dias</h3>
+      <div class="body">
+        <p>A implantação dependia de duas coisas lentas: o cliente liberar as próprias bases de leads, corretores e imóveis, e o time de tecnologia rodar scripts direto no banco para configurar cada instância.</p>
+        <div class="split">
+          <div class="before"><h4>Antes</h4><ul>
+            <li>Toda configuração passava pela tecnologia, via scripts no banco</li>
+            <li>Responsabilidades misturadas entre empresa e cliente, sem prazo claro</li>
+            <li>O cliente só começava a usar quando tudo estava cadastrado</li>
+          </ul></div>
+          <div><h4>Depois</h4><ul>
+            <li>Um back-office interno em que o time de implantação configurava tudo, inclusive durante as visitas, sem depender de alguém técnico</li>
+            <li>O que era interno ficou com a empresa, e o envio das bases ficou claramente com a incorporadora</li>
+            <li>O analista cadastrava ao menos um empreendimento em lançamento para o cliente já começar a operar</li>
+            <li>Cobrança a partir do segundo mês, para criar urgência do lado do cliente</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <h3>O que mudou</h3>
+      <div class="body">
+        <ul class="pain wins">
+          <li><strong>Aquisição</strong><span>Vendedores que entendiam o produto passaram a apresentar melhor as funcionalidades e a vender com mais segurança.</span></li>
+          <li><strong>Tempo de implantação</strong><span>Com Vendas e Implantação falando a mesma língua, o cliente chegava com expectativas mais claras, e a implantação caiu de mais de 2 meses para 20 dias.</span></li>
+          <li><strong>Falsos bugs</strong><span>O time de CX passou a reconhecer o comportamento esperado do produto e a enviar menos chamados que não eram bugs para o time de tecnologia.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="lesson"><div class="wrap"><h3>O que aprendi</h3><p>Às vezes o maior ganho de um produto não está numa funcionalidade nova, e sim em fazer quem vende e quem atende entender as que já existem.</p></div></div>
 </article>
 
 <!-- CASE 3 -->
