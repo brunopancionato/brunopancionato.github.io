@@ -84,6 +84,10 @@
   .numbers div+div{padding-left:28px;border-left:1px solid var(--rule)}
   .numbers b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(44px,5vw,68px);line-height:1;letter-spacing:-.04em;color:var(--cobalt);margin-bottom:12px}
   .numbers span{font-size:15px;color:var(--slate);display:block;max-width:22em}
+  .screens{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:36px 0 8px}
+  .screens figure{margin:0}
+  .screens img{display:block;width:100%;height:auto;border-radius:22px;border:6px solid var(--navy);background:var(--navy)}
+  .screens figcaption{font-size:14px;color:var(--slate);margin-top:10px}
   .footnote{font-size:14px;color:var(--slate)}
 
   .part{display:grid;grid-template-columns:260px 1fr;gap:48px;padding:56px 0;border-bottom:1px solid var(--rule)}
@@ -162,6 +166,8 @@
     .hero-photo{height:72vw;max-height:520px;order:-1}
     .hero-text{padding:48px 22px 56px}
     .contexts,.numbers,.split,.timeline{grid-template-columns:1fr}
+    .screens{grid-template-columns:repeat(3,72%);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}
+    .screens figure{scroll-snap-align:start}
     .numbers div,.numbers div+div{padding:22px 0;border-left:none}
     .numbers div+div{border-top:1px solid var(--rule)}
     .row{grid-template-columns:1fr;gap:6px;padding:24px 4px}
@@ -237,7 +243,7 @@
     <a class="row" href="#ia">
       <span class="where">Projeto pessoal e rotina de PM</span>
       <h3>IA aplicada a Produto</h3>
-      <span class="num">WiMetria<small>app Android em Kotlin</small></span>
+      <span class="num">WiMetria<small>app Android feito com IA</small></span>
     </a>
   </div>
 </section>
@@ -554,6 +560,11 @@
       <h3>WiMetria</h3>
       <div class="body">
         <p>Um app para quem sofre com Wi-Fi instável por causa da interferência de roteadores vizinhos. Ele ajuda a diagnosticar o problema e a posicionar os pontos de uma rede mesh. Conduzi o produto de ponta a ponta com IA, fazendo o papel de PM, designer e desenvolvedor: pesquisa de mercado, protótipo de telas, design, desenvolvimento, documentação, validação e publicação.</p>
+        <div class="screens">
+          <figure><img src="wimetria-resumo.jpg" alt="Tela de resumo do WiMetria com a força do sinal em dBm" loading="lazy"><figcaption>Resumo da conexão, com a força do sinal traduzida em níveis simples, como "bom" e "atenção".</figcaption></figure>
+          <figure><img src="wimetria-analise.jpg" alt="Tela de análise de sinal com frequência, canal, largura e diagnóstico" loading="lazy"><figcaption>Análise do sinal e diagnóstico em linguagem simples.</figcaption></figure>
+          <figure><img src="wimetria-canais.jpg" alt="Tela de canais Wi-Fi com a ocupação de cada canal na faixa de 5 GHz" loading="lazy"><figcaption>Ocupação dos canais por faixa, para escolher o canal com menos interferência.</figcaption></figure>
+        </div>
         <div class="episode">
           <h4>Quando o agente autônomo custa mais do que entrega</h4>
           <p>O agente de IA que fazia o discovery consumia tokens demais e travava ao atingir o limite de uso. Em vez de insistir na autonomia, troquei o agente por uma estrutura de loops com objetivo definido: cada ciclo tinha uma meta clara e só avançava quando ela era cumprida. O discovery continuou rodando, com custo previsível e sem travas.</p>
